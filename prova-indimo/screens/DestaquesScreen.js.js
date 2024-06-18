@@ -24,43 +24,45 @@ const DestaquesScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
-    backgroundColor: '#FFF8DC',
+    backgroundColor: '#2C3E50',
     paddingHorizontal: 20,
-    paddingTop: 20,
+    paddingTop: 50,
   },
   title: {
-    fontSize: 28,
+    fontSize: 32,
     fontWeight: 'bold',
-    marginBottom: 20,
-    color: '#8B4513',
+    marginBottom: 30,
+    color: '#ECF0F1',
   },
   movie: {
     marginBottom: 20,
-    padding: 15,
-    borderRadius: 10,
-    backgroundColor: '#FFE4C4',
+    padding: 20,
+    borderRadius: 15,
+    backgroundColor: '#34495E',
+    width: '100%',
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,
     },
-    shadowOpacity: 0.25,
+    shadowOpacity: 0.3,
     shadowRadius: 3.84,
     elevation: 5,
   },
   movieTitle: {
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 5,
-    color: '#8B4513',
+    marginBottom: 10,
+    color: '#ECF0F1',
   },
   movieDescription: {
-    fontSize: 16,
+    fontSize: 18,
     textAlign: 'justify',
-    color: '#333',
+    color: '#BDC3C7',
   },
 });
+
 
 export default DestaquesScreen;

@@ -5,7 +5,7 @@ export default function ContatoScreen() {
   // Informações de contato e descrição
   const informacoes = {
     contato: {
-      email: "vini.manzano@meucine.com.br",
+      email: "senaisenai@gmail.com.br",
       telefone: "(19)9999-9999",
       endereco: "Rua do max-cine, 844, Jaguariúna, São Paulo"
     },
@@ -27,34 +27,61 @@ export default function ContatoScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
-    backgroundColor: '#F5F5F5',
+    backgroundColor: '#2C3E50',
     paddingHorizontal: 20,
-    paddingTop: 20,
+    paddingTop: 50,
   },
   title: {
-    fontSize: 28,
+    fontSize: 32,
     fontWeight: 'bold',
+    marginBottom: 30,
+    color: '#ECF0F1',
+  },
+  infoContainer: {
+    backgroundColor: '#34495E',
+    borderRadius: 15,
+    padding: 20,
     marginBottom: 20,
-    color: '#333',
+    width: '100%',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 3.84,
+    elevation: 5,
   },
   subtitle: {
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: 'bold',
-    marginTop: 20,
     marginBottom: 10,
-    color: '#8B4513',
+    color: '#ECF0F1',
   },
   info: {
-    fontSize: 16,
+    fontSize: 18,
     marginTop: 5,
-    color: '#333',
+    color: '#BDC3C7',
+  },
+  descriptionContainer: {
+    backgroundColor: '#34495E',
+    borderRadius: 15,
+    padding: 20,
+    width: '100%',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 3.84,
+    elevation: 5,
   },
   description: {
-    fontSize: 16,
-    textAlign: 'center',
-    marginTop: 20,
-    color: '#333',
+    fontSize: 18,
+    textAlign: 'justify',
+    color: '#BDC3C7',
   },
 });

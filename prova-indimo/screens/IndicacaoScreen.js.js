@@ -34,23 +34,29 @@ const IndicacaoScreen = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
+  background: {
     flex: 1,
-    backgroundColor: '#FFF8DC',
+    resizeMode: 'cover',
+  },
+  overlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.7)', // Overlay com semi-transparência
+    justifyContent: 'center',
+    alignItems: 'center',
     paddingHorizontal: 20,
-    paddingTop: 20,
+    paddingTop: 50,
   },
   title: {
-    fontSize: 28,
+    fontSize: 32,
     fontWeight: 'bold',
-    marginBottom: 20,
-    color: '#8B4513',
+    marginBottom: 30,
+    color: '#34495E',
   },
   movie: {
     marginBottom: 20,
     padding: 15,
     borderRadius: 10,
-    backgroundColor: '#FFE4C4',
+    backgroundColor: '#34495E',
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
@@ -64,12 +70,12 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 5,
-    color: '#8B4513',
+    color: '#ECF0F1',
   },
   movieDescription: {
     fontSize: 16,
     textAlign: 'justify',
-    color: '#333',
+    color: '#BDC3C7',
   },
 });
 

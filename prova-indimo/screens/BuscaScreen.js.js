@@ -28,7 +28,7 @@ export default function BuscaScreen() {
     <View style={styles.movieItem}>
       <Image 
         style={styles.poster}
-        source={{uri: item.Poster}}
+        source={{ uri: item.Poster }}
         resizeMode="cover"
       />
       <Text style={styles.movieTitle}>{item.Title}</Text>
@@ -44,11 +44,12 @@ export default function BuscaScreen() {
         placeholder="Digite o título do filme"
         onChangeText={text => setQuery(text)}
         value={query}
+        placeholderTextColor="#BDC3C7" // Corresponds to the placeholder color in IndicaçãoScreen
       />
       <Button
         title="Buscar"
         onPress={fetchMovieInfo}
-        color="#8B4513"
+        color="#34495E"
       />
       {error && <Text style={styles.error}>{error}</Text>}
       <FlatList
@@ -66,23 +67,25 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5F5F5',
+    backgroundColor: '#BDC3C7', // Background color similar to IndicaçãoScreen
     paddingHorizontal: 20,
   },
   title: {
     fontSize: 28,
     fontWeight: 'bold',
     marginBottom: 20,
-    color: '#8B4513',
+    color: '#34495E', // Text color similar to IndicaçãoScreen
   },
   input: {
     width: '100%',
     borderWidth: 1,
-    borderColor: '#8B4513',
+    borderColor: '#34495E', // Border color similar to IndicaçãoScreen
     borderRadius: 5,
     padding: 10,
     marginBottom: 10,
     fontSize: 16,
+    backgroundColor: '#ECF0F1', // Input background color similar to IndicaçãoScreen
+    color: '#34495E', // Text color similar to IndicaçãoScreen
   },
   error: {
     color: 'red',
@@ -94,15 +97,15 @@ const styles = StyleSheet.create({
   movieItem: {
     padding: 10,
     borderBottomWidth: 1,
-    borderBottomColor: '#8B4513',
+    borderBottomColor: '#34495E',
   },
   movieTitle: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#8B4513',
+    color: '#34495E', // Movie title color similar to IndicaçãoScreen
   },
   movieGenre: {
-    color: '#8B4513',
+    color: '#34495E', // Movie genre color similar to IndicaçãoScreen
   },
   poster: {
     width: 100,
